@@ -1,0 +1,86 @@
+.tiles-heading {
+  background-color: #F7EEEE;
+  padding: 50px;
+}
+
+.tiles-heading div h2 {
+  text-align: center;
+  padding: 25px;
+}
+
+.tiles > ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(257px, 1fr));
+  gap: 80px;
+}
+
+.tiles > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.tiles .tile-body p:nth-child(2) {
+  color: #4F4F4F;
+}
+
+.tiles .tile-meta {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.tiles .tile-meta > div {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.tiles .tile-meta > div > img {
+  content: url('../../icons/volvo.png');
+  width: 10%;
+}
+
+.tiles .tile-meta div > span {
+  font-weight: 500;
+  color: #4F4F4F;
+}
+
+.tiles .tile-meta > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #66656B;
+}
+
+.tiles .tile-meta .tile-tags > span {
+  padding: 5px;
+  border: 1px solid #EDEDED;
+  background-color: #EDEDED;
+}
+
+.tiles .load-more-btn {
+  margin: 30px auto;
+  padding: 8px 12px;
+  display: block;
+  background-color: transparent;
+  border: 1.5px solid;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tiles-heading {
+    padding: 0px;
+  }
+
+  .tiles-heading div h2 {
+    padding: 25px 0;
+    font-size: 30px;
+  }
+
+  .tiles > ul {
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  }
+}
