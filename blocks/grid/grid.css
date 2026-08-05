@@ -1,0 +1,90 @@
+.insights {
+  background-color: #F7EEEE;
+  padding: 50px;
+}
+
+.insights #industry-insights {
+  text-align: center;
+  padding: 25px;
+}
+
+.grid > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+.grid > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.grid .grid-card-body p:nth-child(2) {
+  color: #4F4F4F;
+}
+
+.grid .grid-card-meta {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.grid .grid-card-meta .grid-card-meta-flex-box {
+  display: flex;
+  gap: 15px;
+}
+
+.grid .grid-card-meta .grid-card-meta-flex-box img {
+  content: url('../../icons/volvo.png');
+  width: 10%;
+}
+
+.grid .grid-card-meta div > span {
+  font-weight: 500;
+  color: #4F4F4F;
+}
+
+.grid .grid-card-meta .card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #66656B;
+}
+
+.grid .grid-card-meta .card-tags {
+  margin-top: 10px;
+}
+
+.grid .grid-card-meta .card-tags > span {
+  padding: 5px;
+  border: 1px solid #EDEDED;
+  background-color: #EDEDED;
+}
+
+.grid .grid-load-more {
+  margin: 30px auto;
+  padding: 8px 12px;
+  display: block;
+  background-color: transparent;
+  border: 1.5px solid;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .insights {
+    padding: 0px;
+  }
+
+  .insights #industry-insights {
+    padding: 25px 0;
+    font-size: 30px;
+  }
+
+  .grid > ul {
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  }
+}
