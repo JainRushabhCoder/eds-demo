@@ -18,6 +18,7 @@ export default function decorate(block) {
     const tileMetaFlexBox = document.createElement('div');
     tileMeta.append(tileMetaFlexBox);
     const logoImg = document.createElement('img');
+    logoImg.setAttribute('alt', 'img');
     tileMetaFlexBox.append(logoImg);
     const tileMetaBlock = document.createElement('div');
     tileMetaFlexBox.append(tileMetaBlock);
